@@ -1,4 +1,5 @@
 (fp_lib_table
   (lib (name esp32-wrover)(type KiCad)(uri ${KIPRJMOD}/parts_models/esp32-wrover-kicad-master/esp32-wrover.pretty)(options "")(descr ""))
   (lib (name esp32-wrover-kicad-master)(type KiCad)(uri ${KIPRJMOD}/parts_models/esp32-wrover-kicad-master)(options "")(descr ""))
+  (lib (name parts_models)(type KiCad)(uri ${KIPRJMOD}/parts_models)(options "")(descr ""))
 )
