@@ -878,4 +878,50 @@ Wire Wire Line
 Connection ~ 9100 4400
 Wire Wire Line
 	8500 4800 8500 4900
+$Comp
+L LED:SK6812 D1
+U 1 1 5F3F3DD8
+P 3600 1700
+F 0 "D1" H 3944 1746 50  0000 L CNN
+F 1 "SK6812" H 3944 1655 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm" H 3650 1400 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf" H 3700 1325 50  0001 L TNN
+	1    3600 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR018
+U 1 1 5F3F4B3A
+P 3600 1400
+F 0 "#PWR018" H 3600 1250 50  0001 C CNN
+F 1 "+5V" H 3615 1573 50  0000 C CNN
+F 2 "" H 3600 1400 50  0001 C CNN
+F 3 "" H 3600 1400 50  0001 C CNN
+	1    3600 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR028
+U 1 1 5F3F589D
+P 3600 2000
+F 0 "#PWR028" H 3600 1750 50  0001 C CNN
+F 1 "GND" H 3605 1827 50  0000 C CNN
+F 2 "" H 3600 2000 50  0001 C CNN
+F 3 "" H 3600 2000 50  0001 C CNN
+	1    3600 2000
+	1    0    0    -1  
+$EndComp
+Text GLabel 3300 1700 0    50   Input ~ 0
+IO15
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5F3FFC2D
+P 3900 1700
+F 0 "TP1" H 3958 1818 50  0000 L CNN
+F 1 "TestPoint" H 3958 1727 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_2.0x2.0mm" H 4100 1700 50  0001 C CNN
+F 3 "~" H 4100 1700 50  0001 C CNN
+	1    3900 1700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
