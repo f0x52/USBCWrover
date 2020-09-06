@@ -555,17 +555,6 @@ $EndComp
 Text GLabel 3300 1700 0    50   Input ~ 0
 IO15
 $Comp
-L Connector:TestPoint TP1
-U 1 1 5F3FFC2D
-P 3900 1700
-F 0 "TP1" H 3958 1818 50  0000 L CNN
-F 1 "TestPoint" H 3958 1727 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 4100 1700 50  0001 C CNN
-F 3 "~" H 4100 1700 50  0001 C CNN
-	1    3900 1700
-	1    0    0    -1  
-$EndComp
-$Comp
 L Interface_USB:CH340C U1
 U 1 1 5F4B13A2
 P 2850 3850
@@ -764,5 +753,46 @@ F 2 "" H 2750 2950 50  0001 C CNN
 F 3 "" H 2750 2950 50  0001 C CNN
 	1    2750 2950
 	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3900 1700 4750 1700
+Wire Wire Line
+	4750 1700 4750 2550
+Wire Wire Line
+	4750 2550 5500 2550
+$Comp
+L Device:LED D3
+U 1 1 5F558CA0
+P 4550 1100
+F 0 "D3" H 4543 845 50  0000 C CNN
+F 1 "LED" H 4543 936 50  0000 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm" H 4550 1100 50  0001 C CNN
+F 3 "~" H 4550 1100 50  0001 C CNN
+	1    4550 1100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5F559D1C
+P 4850 1100
+F 0 "R1" V 4643 1100 50  0000 C CNN
+F 1 "R" V 4734 1100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4780 1100 50  0001 C CNN
+F 3 "~" H 4850 1100 50  0001 C CNN
+	1    4850 1100
+	0    1    1    0   
+$EndComp
+Text GLabel 4400 1100 0    50   Input ~ 0
+IO15
+$Comp
+L power:GND #PWR05
+U 1 1 5F55AE01
+P 5000 1100
+F 0 "#PWR05" H 5000 850 50  0001 C CNN
+F 1 "GND" H 5005 927 50  0000 C CNN
+F 2 "" H 5000 1100 50  0001 C CNN
+F 3 "" H 5000 1100 50  0001 C CNN
+	1    5000 1100
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
